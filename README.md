@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### The challenge
 
 Users should be able to:
@@ -15,3 +16,6 @@ Users should be able to:
 ![Ecommerce Screenshot 1](../ecommerce_pic2.png)
 ![Ecommerce Screenshot 2](./assets/ecommerce_pic3.png)
 ![Ecommerce Screenshot 3](./assets/screenshot_2025-08-21.png)
+=======
+# E-Commerce-
+>>>>>>> 5657ce81ebf03871c4def9e2be09fef11e3519c2
