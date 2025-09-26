@@ -2,7 +2,7 @@
 export type ProductImage = {
   full: string;
   thumb: string;
-  alt?: string; // optional alt text 
+  alt?: string; 
 };
 
 // Type for each item in the cart

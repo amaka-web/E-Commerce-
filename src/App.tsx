@@ -5,7 +5,7 @@ import ProductDetails from "@/components/ProductDetails";
 import { Separator } from "@/components/ui/separator";
 import { cartReducer } from "@/lib/cartReducer";
 import type { CartItem } from "./types";
-import { Button } from "./components/ui/button";
+//import { Button } from "./components/ui/button";
 
 const product = {
   id: "sneaker-001",
@@ -63,22 +63,6 @@ const [lightboxOpen, setLightboxOpen] = useState(false);
 
       <main className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-10 md:grid-cols-2 md:py-16">
         <section>
-          {/*<Lightbox images={product.images} index={current} onIndex={setCurrent} />
-          <div className="mt-4 grid grid-cols-4 gap-3">
-            {product.images.map((img, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrent(i)}
-                className={`overflow-hidden rounded-xl ring-offset-2 transition-all ${
-                  i === current ? "ring-2 ring-primary" : "ring-1 ring-transparent hover:ring-muted"
-                }`}
-                aria-label={`Show image ${i + 1}`}
-              >
-                <img src={img.thumb} alt={img.alt} className="aspect-square w-full object-cover" />
-              </button>
-            ))}
-          </div>
-          */}
           <Lightbox
   images={product.images}
   index={current}
@@ -87,9 +71,9 @@ const [lightboxOpen, setLightboxOpen] = useState(false);
   onOpenChange={setLightboxOpen}
 />
 
-<div className="mt-4 grid grid-cols-4 gap-3">
+<div className="mt-4 grid grid-cols-4 gap-3 h-16">
   {product.images.map((img, i) => (
-    <Button
+    <button
       key={i}
       onClick={() => {
         setCurrent(i);
@@ -100,7 +84,7 @@ const [lightboxOpen, setLightboxOpen] = useState(false);
       }`}
     >
       <img src={img.thumb} alt={img.alt} className="aspect-square w-full object-cover" />
-    </Button>
+    </button>
   ))}
 </div>
         </section>
@@ -110,8 +94,8 @@ const [lightboxOpen, setLightboxOpen] = useState(false);
 
       <footer className="mx-auto max-w-6xl px-4 pb-10">
         <Separator className="mb-4" />
-        <div className="text-xs text-muted-foreground items-center text-center justify-center">
-          Faith Chiamaka {new Date().getFullYear()}.
+        <div className="text-sm font-medium text-muted-foreground items-center text-center justify-center">
+          <span className="text-grey-600">&copy;</span> Faith Chiamaka {new Date().getFullYear()}.
         </div>
       </footer>
     </div>

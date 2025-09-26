@@ -60,7 +60,7 @@ export default function CartDrawer({ items, dispatch }: { items: CartItem[]; dis
           <span className="text-sm text-muted-foreground">Subtotal</span>
           <span className="text-lg font-semibold">{formatCurrency(total)}</span>
         </div>
-        <Button className="mt-3" disabled={items.length === 0}>
+        <Button className="mt-3 bg-amber-500 hover:bg-amber-600 focus:bg-amber-700" disabled={items.length === 0}>
           Checkout
         </Button>
       </SheetContent>
